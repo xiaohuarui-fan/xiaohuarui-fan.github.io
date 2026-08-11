@@ -1,0 +1,317 @@
+# ========== 站点信息 ==========
+author: 'suga-universe'
+banner: "/image/banner.jpg"
+# ========== 代码复制提示 ==========
+menu:
+  - name: home
+    url: /
+  - name: archives
+    url: /archives/
+# ========== 头像 ==========
+avatar: "avatar.jpg"
+clipboard:
+  success:
+    zh-CN: 复制成功 (*^▽^*)
+  fail:
+    zh-CN: 复制失败 (ﾟ⊿ﾟ)ﾂ
+  copyright:
+    enable: false
+
+# 代码块默认展开
+code_block:
+  expand: true
+
+# ========== 评论系统（全部关闭） ==========
+comment:
+  title:
+    zh-CN: 说些什么吧！
+  default: waline
+
+valine:
+  enable: false
+waline:
+  enable: false
+twikoo:
+  enable: false
+giscus:
+  enable: false
+gitalk:
+  enable: false
+disqus:
+  enable: false
+utterances:
+  enable: false
+beaudar:
+  enable: false
+
+# ========== 搜索（先关闭） ==========
+algolia_search:
+  enable: false
+
+# ========== 数学公式（关闭） ==========
+math:
+  katex:
+    enable: false
+  mathjax:
+    enable: false
+
+# ========== Mermaid 流程图（关闭） ==========
+mermaid:
+  zoom: false
+
+# ========== RSS ==========
+rss:
+  limit: 10
+  showFullContent: false
+  showCopyright: false
+
+# ========== 图标 ==========
+icon_font: 4552607_a0oqhord1y
+
+# ========== 侧边栏 ==========
+sidebar:
+  position: left
+  menu: true
+  article:
+    show_common: true
+
+# 文章目录
+toc: true
+
+# 社交链接（先留空）
+social:
+
+# ========== 页脚 ==========
+footer:
+  since: 2026
+  powered: true
+  count: true
+  busuanzi: false
+  icon:
+    url: "../image/taichi.png"
+    rotate: true
+    mask: true
+
+icp:
+  icpnumber: 
+  beian: 
+  recordcode: 
+
+moe_icp:
+  icpnumber: 
+
+# ========== 加载进度条 ==========
+pace:
+  enable: true
+
+# ========== 暗色模式 ==========
+dark_mode:
+  button: true
+  type: auto
+
+# ========== 鼠标烟花特效 ==========
+firework:
+  enable: faulse
+  disable_on_mobile: false
+  options:
+
+# ========== PJAX（关闭） ==========
+pjax:
+  enable: false
+
+# ========== Service Worker（关闭） ==========
+service_worker:
+  enable: false
+
+# ========== Live2D 看板娘（关闭） ==========
+live2d:
+  enable: false
+  position: left
+
+live2d_widgets:
+  enable: false
+  position: left
+
+# ========== 灵梦鼠标指针 ==========
+reimu_cursor: true
+
+# ========== 响应式头图（关闭） ==========
+banner_srcset:
+  enable: false
+
+# ========== Quicklink 预加载 ==========
+quicklink:
+  enable: true
+  timeout: 3000
+  priority: true
+  ignores: []
+
+# ========== 文章版权卡片（关闭） ==========
+article_copyright:
+  enable: false
+
+# ========== 段落锚点（关闭） ==========
+anchor:
+  explicit:
+    enable: false
+  auto:
+    enable: false
+    length: 60
+
+# ========== 文章过期提醒（关闭） ==========
+outdate:
+  enable: false
+
+# ========== 赞助（关闭） ==========
+sponsor:
+  enable: false
+  tip:
+    zh-CN: 请作者喝杯咖啡吧
+  icon:
+    url: "../image/taichi.png"
+    rotate: true
+    mask: true
+  qr: []
+
+# ========== 音乐播放器（关闭） ==========
+player:
+  aplayer:
+    enable: false
+    options:
+      audio: []
+  meting:
+    enable: false
+    options:
+
+# ========== 分享（关闭） ==========
+share: []
+
+# ========== 首页目录卡片（关闭） ==========
+home_categories:
+  enable: false
+
+# ========== 注入器 ==========
+injector:
+  head_end: '<link rel="stylesheet" href="/custom.css">'
+  body_end: '<script src="/custom.js"></script>'
+# ========== Pangu 自动空格（关闭） ==========
+pangu:
+  enable: false
+
+# ========== 三角徽标（关闭） ==========
+triangle_badge:
+  enable: false
+  icon: github
+  link: https://github.com/D-Sketon/hugo-theme-reimu
+
+# ========== 主题色（留空使用默认红白） ==========
+internal_theme:
+  light:
+    --red-0: "#4A90E2"      # 主蓝色
+    --red-1: "#5BA4F0"      # 亮蓝
+    --red-2: "#3D7BD8"      # 中蓝
+    --red-3: "#7BB8F0"      # 浅蓝
+    --red-4: "#A8D0F8"      # 淡蓝
+    --red-5: "#E3F2FD"      # 极淡蓝背景
+    --red-5-5: "#BBDEFB"    # 按钮hover
+    --red-6: "#F0F8FF"      # 卡片背景
+    --color-red-6-shadow: "rgba(74, 144, 226, 0.6)"
+    --color-red-3-shadow: "rgba(74, 144, 226, 0.3)"
+    
+    --highlight-nav: "#2c3e50"
+    --highlight-scrollbar: "#5BA4F0"
+    --highlight-background: "#f0f8ff"
+    --highlight-selection: "#4A90E288"
+    --highlight-foreground: "#2c3e50"
+    --highlight-comment: "#7f8c8d"
+    --highlight-red: "#4A90E2"
+    --highlight-orange: "#5BA4F0"
+    --highlight-yellow: "#74b9ff"
+    --highlight-green: "#55efc4"
+    --highlight-aqua: "#74b9ff"
+    --highlight-blue: "#0984e3"
+    --highlight-purple: "#a29bfe"
+    
+  dark:
+    --red-4: "rgba(74, 144, 226, 0.5)"
+    --red-5: "rgba(74, 144, 226, 0.15)"
+    --red-5-5: "rgba(74, 144, 226, 0.05)"
+    --red-6: "rgba(240, 248, 255, 0.2)"
+    
+    --highlight-nav: "#1a1a2e"
+    --highlight-scrollbar: "#4A90E2"
+    --highlight-background: "#16213e"
+    --highlight-selection: "#4A90E255"
+    --highlight-foreground: "#e0e0e0"
+    --highlight-comment: "#6c6c6c"
+    --highlight-red: "#4A90E2"
+    --highlight-orange: "#5BA4F0"
+    --highlight-yellow: "#74b9ff"
+    --highlight-green: "#55efc4"
+    --highlight-aqua: "#74b9ff"
+    --highlight-blue: "#74b9ff"
+    --highlight-purple: "#a29bfe"
+# ========== 字体 ==========
+font:
+  enable: false
+
+local_font:
+  article:
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+custom_font:
+  enable: false
+
+# ========== 布局 ==========
+layout:
+  max_width: 1350px
+
+# ========== 滚动动画 ==========
+animation:
+  enable: true
+
+# ========== 小部件数量限制 ==========
+category_limits: 10
+tag_limits: 10
+recent_posts_limits: 5
+tagcloud_limits: 20
+
+# ========== 文章摘要 ==========
+summary:
+  enable: false
+  style: 'subtitle'
+
+# ========== 加载动画（改成你的像素风） ==========
+preloader:
+  enable: true
+  text:
+    zh-CN: "加载中"
+    zh-TW: "加载中"
+    en: "Loading"
+    ja: "読み込み中"
+  icon: "/image/pixel-loading.gif"
+  rotate: true
+
+# ========== 回到顶部 ==========
+top:
+  enable: true
+  position: right
+  icon:
+    url: "../image/taichi.png"
+    rotate: true
+    mask: true
+
+# ========== 侧边栏小部件 ==========
+widgets:
+  - category
+  - tag
+  - recent_posts 
+
