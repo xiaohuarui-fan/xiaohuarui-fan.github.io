@@ -6,7 +6,7 @@ categories: ["miu404"]
 tags: ["ibsm",  "甜饼", "短篇"]
 author: "6qu_cy"
 link: ""
-banner: "/images/banner2.jpg"
+banner: "/image/banner6.jpg"
 summary: "很简短写得有点夸张的条子吃嘴子。"
 ---
 > **作者：** 6qu_cy

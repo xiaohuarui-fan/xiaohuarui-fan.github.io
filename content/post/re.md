@@ -6,7 +6,7 @@ categories: ["miu404"]
 tags: ["ibsm",  "甜饼", "短篇","R18"]
 author: "mushrooms_mogu"
 link: ""
-banner: "/images/banner2.jpg"
+banner: "/image/banner7.jpg"
 summary: "*伊吹蓝觉得志摩一未有事瞒着他，恰好撞见了志摩在卫生间自w，这个志摩一未一直在挑衅*预警：angry sex（也不咋生气） 玩具 束缚 非典型bdsm 舔穴
 *某种程度上确实是志摩一未生贺（）但是太怪了发生时间就不放在生日
 *到最后怎么又变成甜腻地做了，共轭狗狗"

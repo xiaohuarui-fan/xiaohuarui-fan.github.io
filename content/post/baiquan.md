@@ -1,7 +1,7 @@
 ---
 title: "【ibsm】败犬不需要哭泣"
 date: 2026-08-10
-banner: "/image/banner1.jpg"
+banner: "/image/banner5.jpg"
 tags: ["ibsm", "正剧向"]
 categories: ["miu404"]
 ---

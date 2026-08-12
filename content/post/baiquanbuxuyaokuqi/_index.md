@@ -1,7 +1,7 @@
 ---
 title: "【ibsm】败犬不需要哭泣"
 date: 2026-08-10T00:00:00+08:00
-banner: "/image/banner2.jpg"
+banner: "/image/banner5.jpg"
 type: post    
 ---
 
