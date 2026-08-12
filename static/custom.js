@@ -62,3 +62,63 @@
       if (nextLink) nextLink.style.display = 'none';
     });
 })();
+
+// ========== 雪花飘落 ==========
+(function() {
+  // 只在首页显示雪花（如果你想所有页面都有，删掉下面这行 if）
+  if (!document.body.classList.contains('home')) return;
+
+  const container = document.createElement('div');
+  container.className = 'snow-container';
+  document.body.appendChild(container);
+
+  const snowCount = 40;  // 雪花数量，越多越密
+  const snowChars = ['❄', '✦', '•', '◦'];
+
+  for (let i = 0; i < snowCount; i++) {
+    const flake = document.createElement('div');
+    flake.className = 'snowflake';
+    flake.innerText = snowChars[Math.floor(Math.random() * snowChars.length)];
+
+    // 随机参数，让每片雪花都不一样
+    const left = Math.random() * 100;      // 水平位置 0-100%
+    const duration = 2 + Math.random() * 12;  // 下落速度 6-18秒
+    const delay = Math.random() * 15;      // 延迟出现 0-15秒
+    const size = 15 + Math.random() * 14;  // 大小 10-24px
+    const opacity = 0.4 + Math.random() * 0.5;
+
+    flake.style.left = left + '%';
+    flake.style.animationDuration = duration + 's';
+    flake.style.animationDelay = delay + 's';
+    flake.style.fontSize = size + 'px';
+    flake.style.opacity = opacity;
+
+    container.appendChild(flake);
+  }
+})();
+
+// ========== 侧边栏标题旁蝴蝶结图片 ==========
+(function() {
+  // 直接找所有标题
+  const titles = document.querySelectorAll('.widget-title');
+  
+  titles.forEach(title => {
+    // 避免重复添加
+    if (title.querySelector('.widget-bow-img')) return;
+
+    // 让标题变成 flex 布局，文字和图片在同一行两端对齐
+    title.style.display = 'flex';
+    title.style.justifyContent = 'space-between';
+    title.style.alignItems = 'center';
+     title.style.width = '100%';
+
+    // 创建蝴蝶结图片
+    const img = document.createElement('img');
+    img.src = '/image/hudiejie.png';
+    img.className = 'widget-bow-img';
+    img.alt = '';
+
+    title.appendChild(img);
+  });
+})();
+

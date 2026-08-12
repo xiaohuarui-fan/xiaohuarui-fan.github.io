@@ -81,3 +81,75 @@ pre code, blockquote p {
   max-height: none !important;
   overflow: visible !important;
 }
+
+/* ===== 文章正文保持默认，保证长文阅读舒适 ===== */
+.post-content,
+.post-body,
+.article-content,
+.content,
+.post-entry {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif !important;
+    line-height: 1.8;
+}
+
+/* ========== 雪花飘落动画 ========== */
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  /* 雪花不阻挡鼠标点击 */
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -20px;
+  color: rgba(236, 240, 243, 0.85);  
+  user-select: none;
+  animation: snowfall linear infinite;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+/* ========== 侧边栏蝴蝶结图片 ========== */
+.widget-bow-img {
+  width: 150px;        /* 蝴蝶结大小，不满意可以改 */
+  height: auto;
+  margin-left: 10px;  /* 和标题文字的间距 */
+  flex-shrink: 0;     /* 防止被压缩 */
+  opacity: 0.9;
+}
+
+/* ========== 头像上方装饰图（绝对定位，不挤位置） ========== */
+.sidebar-author {
+  position: relative !important;
+}
+
+.sidebar-author::before {
+  content: '';
+  position: absolute;
+  top: -160px;          /* 负数=向上飘，改这个调上下位置 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;         /* ← 改这个调大小 */
+  height: 280px;        /* ← 和 width 保持一样 */
+  background-image: url('/image/touxiang.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 5;
+}
